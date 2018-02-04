@@ -75,7 +75,7 @@ console.log(JSON.stringify(patchMerge(
   }
 ), null, 2));
 /*
-Logs this the the console:
+Logs this to the console:
 
 {
   "a": 2,

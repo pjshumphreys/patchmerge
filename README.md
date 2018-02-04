@@ -7,7 +7,7 @@ JSON Merge Patch [(RFC 7396)](http://tools.ietf.org/html/rfc7396) is a standard 
 allows you to update a JSON document by sending the changes rather than the whole document.
 JSON Merge Patch plays well with the HTTP PATCH verb (method) and REST style programming.
 
-patchmerge extends RFC 7396 in that if an array in the patch or the the oiginal object contains further objects, these fields are merged rather than replaced.
+patchmerge extends RFC 7396 in that if an array in the patch or the original object contains further objects, these fields are merged rather than replaced.
 
 
 ## Install

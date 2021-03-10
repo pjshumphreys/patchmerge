@@ -102,7 +102,7 @@ const objectMerge = (original, patch, removeMode) => {
     }
     //merge objects
     else {
-      //Don't implicitly mutate Object.prototype but subsitute an empty object
+      //Don't inadvertently mutate Object.prototype but substitute an empty object instead
       if(original[name] === Object.prototype) {
         delete original[name];
 

@@ -102,6 +102,17 @@ const objectMerge = (original, patch, removeMode) => {
     }
     //merge objects
     else {
+      //Don't inadvertently mutate Object.prototype but substitute an empty object instead
+      if(original[name] === Object.prototype) {
+        delete original[name];
+
+        Object.defineProperty(original, name, {
+          enumerable: true,
+          writable: true,
+          value: {}
+        });
+      }
+
       original[name] = objectMerge(original[name], patch[name], removeMode);
     }
   }

@@ -1,7 +1,7 @@
 {
   "name": "patchmerge",
-  "version": "1.0.1",
-  "description": "Merges JavaScript object literals similary to RFC 7396, but with extra suuport for arrays of objects",
+  "version": "1.0.2",
+  "description": "Merges JavaScript object literals similary to RFC 7396, but with extra support for arrays of objects",
   "main": "index.js",
   "scripts": {
     "test": "echo Done"
